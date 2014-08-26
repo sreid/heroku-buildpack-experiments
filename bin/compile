@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir>
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+LP_DIR=`cd $(dirname $0); cd ..; pwd`
+
+echo "=====> env"
+env
+
+echo "=====> local"
+echo "BUILD_DIR $BUILD_DIR"
+echo "CACHE_DIR $CACHE_DIR"
+echo "GIT_DIR $GIT_DIR"
+
+echo "=====> build dir"
+ls -la $BUILD_DIR
+
+echo "=====> cache dir"
+ls -la $CACHE_DIR
+
+echo "=====> git dir"
+ls -la $GIT_DIR
+
+echo "=====> lp dir"
+ls -la $LP_DIR
